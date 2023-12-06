@@ -19,7 +19,7 @@
 	}
 	&-text {
 		font-size: 1.8rem;
-		letter-spacing: 0.5px;
+		letter-spacing: 0.09rem;
 		color: $text-color-lighter;
 	}
 
@@ -68,7 +68,7 @@
 		}
 	}
 
-	@include respond("tab") {
+	@include respond("tab-landscape") {
 		margin-top: 8rem;
 		text-align: center;
 		width: 85%;

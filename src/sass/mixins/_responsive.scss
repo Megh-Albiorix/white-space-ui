@@ -1,6 +1,11 @@
 @mixin respond($break-point) {
 	@if $break-point == "tab" {
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 775px) {
+			@content;
+		}
+	}
+	@if $break-point == "tab-landscape" {
+		@media screen and (max-width: 1000px) {
 			@content;
 		}
 	}

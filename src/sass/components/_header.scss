@@ -57,6 +57,9 @@
 			font-size: 3.5rem;
 			font-weight: 500;
 		}
+		@include respond("tab-landscape") {
+			font-size: 1.8rem;
+		}
 	}
 	&-item {
 		margin-right: 2rem;

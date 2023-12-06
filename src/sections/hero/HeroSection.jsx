@@ -1,4 +1,4 @@
-function HeroSection() {
+const HeroSection = () => {
 	return (
 		<section className="hero">
 			<div className="hero-left">
@@ -47,6 +47,6 @@ function HeroSection() {
 			</div>
 		</section>
 	);
-}
+};
 
 export default HeroSection;

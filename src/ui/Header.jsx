@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import CompanyLogo from "./CompanyLogo";
 
-function Header() {
+const Header = () => {
 	const [isNavOpen, setIsNavOpen] = useState(false);
 
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -74,6 +74,6 @@ function Header() {
 			</div>
 		</header>
 	);
-}
+};
 
 export default Header;

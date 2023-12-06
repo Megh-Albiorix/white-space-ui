@@ -17,7 +17,7 @@
 	}
 	&-text {
 		font-size: 1.8rem;
-		letter-spacing: 0.5px;
+		letter-spacing: 0.09rem;
 		color: rgb(150, 148, 148);
 	}
 
@@ -27,7 +27,7 @@
 		align-items: flex-start;
 		padding: 5rem;
 
-		@include respond("tab") {
+		@include respond("tab-landscape") {
 			flex-direction: column;
 			width: 100%;
 			padding: 5rem 5rem 0rem 5rem;
@@ -36,11 +36,15 @@
 	&-post {
 		@include flex-center-col;
 		flex: 0 0 30%;
-		@include respond("tab") {
+		@include respond("tab-landscape") {
 			width: 100%;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 6rem;
+		}
+		@include respond("tab") {
 			justify-content: flex-start;
 			align-items: flex-start;
-			margin-bottom: 6rem;
 		}
 	}
 	&-box {
@@ -56,7 +60,7 @@
 		justify-content: center;
 		@include respond("tab") {
 			height: 23rem;
-			border-radius: 10px;
+			border-radius: 3rem;
 			overflow: hidden;
 			width: 100%;
 		}
@@ -120,13 +124,33 @@
 	&-tags {
 		display: flex;
 		gap: 0.7rem;
+
+		&-bg-1 {
+			background-color: #e5efff;
+			color: #004ecc;
+		}
+
+		&-bg-2 {
+			background-color: #e5f4ff;
+			color: #0077cc;
+		}
+
+		&-bg-3 {
+			background-color: #e5f9ff;
+			color: #0099cc;
+		}
+
+		&-bg-4 {
+			background-color: #f2f4f7;
+			color: #344051;
+		}
 	}
 	&-tag {
 		font-size: 1.4rem;
 		font-weight: 500;
-		letter-spacing: 0.5px;
+		letter-spacing: 0.09rem;
 		padding: 0.3rem 0.6rem;
-		border-radius: 30px;
+		border-radius: 3rem;
 	}
 
 	@include respond("tab") {

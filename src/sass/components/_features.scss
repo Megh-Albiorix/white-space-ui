@@ -1,7 +1,8 @@
 .features {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(40rem, 49%));
-	// gap: 2rem;
+	grid-template-columns: repeat(auto-fit, minmax(45rem, 49%));
+	column-gap: 2rem;
+	row-gap: 2rem;
 	justify-content: center;
 	justify-items: center;
 	align-items: center;
@@ -23,7 +24,7 @@
 		font-size: 4rem;
 		font-weight: 500;
 		margin: 1.5rem 0;
-		letter-spacing: 0.5px;
+		letter-spacing: 0.09rem;
 	}
 
 	&-text {
@@ -42,6 +43,7 @@
 	}
 
 	&-item {
+		margin-bottom: 2rem;
 		&-icon {
 			width: 3.8rem;
 		}
@@ -50,13 +52,14 @@
 			font-size: 2.5rem;
 			color: $text-color-dark-blue;
 			margin: 1rem 0;
-			letter-spacing: 0.5px;
+			letter-spacing: 0.09rem;
 		}
 
 		&-text {
 			font-size: 1.7rem;
 			color: $text-color-dark-blue;
 		}
+
 		@include respond("tab") {
 			margin-bottom: 2.5rem;
 		}
@@ -76,7 +79,7 @@
 		&-image {
 			height: 100%;
 		}
-		@include respond("tab") {
+		@include respond("tab-landscape") {
 			margin-top: 7rem;
 		}
 	}

@@ -1,6 +1,6 @@
 import Tag from "./Tag";
 
-function BlogPost({ imgSrc, blogHeading, blogText }) {
+const BlogPost = ({ imgSrc, blogHeading, blogText }) => {
 	return (
 		<div className="blog-post">
 			<div className="blog__img-box">
@@ -23,18 +23,14 @@ function BlogPost({ imgSrc, blogHeading, blogText }) {
 					<p className="blog-post-text">{blogText}</p>
 				</div>
 				<div className="blog-tags">
-					<Tag bgColor="#E5EFFF" textColor="#004ECC" tagText="UI/UX" />
-					<Tag
-						bgColor="#E5F4FF"
-						textColor="background: #0077CC"
-						tagText="Studio"
-					/>
-					<Tag bgColor="#E5F9FF" textColor="#0099CC" tagText="Web Design" />
-					<Tag bgColor="#F2F4F7" textColor="#344051" tagText="+2" />
+					<Tag className="blog-tags-bg-1" tagText="UI/UX" />
+					<Tag className="blog-tags-bg-2" tagText="Studio" />
+					<Tag className="blog-tags-bg-3" tagText="Web Design" />
+					<Tag className="blog-tags-bg-4" tagText="+2" />
 				</div>
 			</div>
 		</div>
 	);
-}
+};
 
 export default BlogPost;

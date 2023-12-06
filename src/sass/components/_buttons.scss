@@ -1,11 +1,11 @@
 .primary-btn {
 	font-size: 1.8rem;
-	letter-spacing: 0.5px;
+	letter-spacing: 0.09rem;
 	background-color: #1a75ff;
 	color: #fff;
 	padding: 1rem 1.2rem;
 	border: none;
-	border-radius: 5px;
+	border-radius: 0.5rem;
 	cursor: pointer;
 	@include flex-center;
 
@@ -24,10 +24,10 @@
 
 .secondary-btn {
 	font-size: 1.8rem;
-	letter-spacing: 0.5px;
+	letter-spacing: 0.09rem;
 	background-color: #ffffff;
 	border: 1px solid #b1b0b0;
-	border-radius: 5px;
+	border-radius: 0.5rem;
 	padding: 1rem 1.2rem;
 	cursor: pointer;
 

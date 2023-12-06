@@ -1,4 +1,4 @@
-function Features() {
+const Features = () => {
 	return (
 		<section className="features">
 			<div className="features-header">
@@ -57,6 +57,6 @@ function Features() {
 			</div>
 		</section>
 	);
-}
+};
 
 export default Features;

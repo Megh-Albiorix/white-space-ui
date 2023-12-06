@@ -1,4 +1,4 @@
-function Clients() {
+const Clients = () => {
 	return (
 		<section className="clients">
 			<h1 className="clients__heading">Our Clients</h1>
@@ -46,6 +46,6 @@ function Clients() {
 			</div>
 		</section>
 	);
-}
+};
 
 export default Clients;

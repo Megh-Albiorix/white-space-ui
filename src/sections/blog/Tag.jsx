@@ -1,15 +1,5 @@
-function Tag({ bgColor, tagText, textColor }) {
-	return (
-		<div
-			style={{
-				backgroundColor: `${bgColor}`,
-				color: `${textColor}`,
-			}}
-			className="blog-tag"
-		>
-			{tagText}
-		</div>
-	);
-}
+const Tag = ({ tagText, className }) => {
+	return <div className={"blog-tag " + className}>{tagText}</div>;
+};
 
 export default Tag;

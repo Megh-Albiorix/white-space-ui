@@ -1,6 +1,6 @@
 import BlogPost from "./BlogPost";
 
-function Blog() {
+const Blog = () => {
 	return (
 		<section className="blog">
 			<div className="blog-header">
@@ -31,6 +31,6 @@ function Blog() {
 			<button className="primary-btn">Load More</button>
 		</section>
 	);
-}
+};
 
 export default Blog;

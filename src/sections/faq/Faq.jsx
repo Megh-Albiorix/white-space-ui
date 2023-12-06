@@ -28,7 +28,7 @@ const accordianContent = [
 	},
 ];
 
-function Faq() {
+const Faq = () => {
 	return (
 		<section className="faq">
 			<div className="faq-header">
@@ -65,6 +65,6 @@ function Faq() {
 			</div>
 		</section>
 	);
-}
+};
 
 export default Faq;

@@ -1,4 +1,4 @@
-function NewsLetter() {
+const NewsLetter = () => {
 	return (
 		<section className="newsletter">
 			<div className="newsletter__bg-graphics">
@@ -27,6 +27,6 @@ function NewsLetter() {
 			</div>
 		</section>
 	);
-}
+};
 
 export default NewsLetter;

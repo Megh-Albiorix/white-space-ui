@@ -1,4 +1,4 @@
-function Cta() {
+const Cta = () => {
 	return (
 		<section className="cta">
 			<div className="cta-header">
@@ -46,6 +46,6 @@ function Cta() {
 			</div>
 		</section>
 	);
-}
+};
 
 export default Cta;

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function AccordianItem({ title, answer, number }) {
+const AccordianItem = ({ title, answer, number }) => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
@@ -19,6 +19,6 @@ function AccordianItem({ title, answer, number }) {
 			{isOpen && <p className="accordian-answer">{answer}</p>}
 		</div>
 	);
-}
+};
 
 export default AccordianItem;

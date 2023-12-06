@@ -8,7 +8,7 @@
 	align-items: center;
 	max-height: max-content;
 	position: relative;
-	border-radius: 35px;
+	border-radius: 3.5rem;
 	overflow: hidden;
 	@include respond("tab") {
 		width: 100vw;
@@ -58,13 +58,13 @@
 	&__heading {
 		font-size: 3.5rem;
 		color: #002966;
-		letter-spacing: 0.5px;
+		letter-spacing: 0.09rem;
 		font-weight: 500;
 	}
 	&__text {
 		font-size: 1.8rem;
 		width: 75%;
-		letter-spacing: 0.5px;
+		letter-spacing: 0.09rem;
 		color: #002966;
 		margin: 2rem 0;
 	}
@@ -86,7 +86,7 @@
 		font-size: 1.6rem;
 		background-color: #ffffff;
 		padding: 0.8rem;
-		border-radius: 10px;
+		border-radius: 1rem;
 		outline: none;
 		border: none;
 

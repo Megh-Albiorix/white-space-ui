@@ -1,7 +1,7 @@
 import CompanyInfo from "./CompanyInfo";
 import Contact from "../../ui/Contact";
 
-function Footer() {
+const Footer = () => {
 	const date = new Date();
 
 	return (
@@ -56,6 +56,6 @@ function Footer() {
 			</div>
 		</footer>
 	);
-}
+};
 
 export default Footer;
