@@ -1,7 +1,11 @@
 .footer {
-	width: 100%;
+	width: 100vw;
 	height: max-content;
 	padding: 0rem 12rem 4rem 12rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
 	@include respond("tab") {
 		padding: 0rem 4rem 4rem 4rem;
@@ -9,6 +13,7 @@
 
 	&__container {
 		display: flex;
+		width: 85vw;
 		justify-content: space-between;
 		border-bottom: 1px solid rgb(217, 216, 216);
 		padding-bottom: 4rem;
@@ -32,8 +37,11 @@
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 2.5rem;
-		flex-basis: 30%;
+		min-width: 37rem;
 
+		& .logo-text {
+			display: inline-block;
+		}
 		@include respond("phone") {
 			@include flex-center-col;
 		}
@@ -42,7 +50,7 @@
 	&__lists {
 		display: flex;
 		justify-content: space-between;
-		flex-basis: 65%;
+		flex-basis: 55vw;
 		overflow: hidden;
 
 		@include respond("phone") {
@@ -85,7 +93,7 @@
 		}
 	}
 	&__copyright {
-		width: 100%;
+		width: 80vw;
 		margin-top: 5rem;
 		display: flex;
 		justify-content: space-between;
