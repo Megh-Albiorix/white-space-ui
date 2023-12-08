@@ -1,0 +1,151 @@
+.hero {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: repeat(auto-fit, minmax(55rem, 1fr));
+	min-width: 100%;
+	justify-items: center;
+	border-bottom: 1px solid rgb(186, 185, 185);
+	margin: 6rem 0;
+	padding-bottom: 6rem;
+	align-items: center;
+
+	&-left {
+		// width: 40vw;
+		padding: 0 8rem;
+		margin-left: 6rem;
+
+		@include respond("tab-landscape") {
+			// width: 90vw;
+			margin-left: 5rem;
+		}
+		@include respond("tab") {
+			// width: 88vw;
+			margin-left: 3rem;
+			padding: 0 3rem;
+		}
+		@include respond("phone") {
+			// width: 90vw;
+			padding: 0;
+		}
+	}
+
+	&-text {
+		@include respond("phone") {
+			margin-left: 1rem;
+		}
+	}
+
+	&-heading {
+		font-size: 5rem;
+		margin-bottom: 1.5rem;
+		@include respond("phone") {
+			// width: 87vw;
+		}
+	}
+
+	&-para {
+		font-size: 2rem;
+		color: $text-color-lighter;
+	}
+
+	&-right {
+		display: flex;
+		justify-content: center;
+
+		&-img-box {
+			height: 75rem;
+			position: relative;
+			// flex-basis: 95vw;
+
+			@include respond("tab-landscape") {
+				height: 65rem;
+				display: flex;
+				justify-content: center;
+				margin-top: 7rem;
+				align-items: center;
+			}
+			@include respond("tab") {
+				height: 60rem;
+			}
+			// @include respond("phone") {
+			// 	height: 70rem;
+			// }
+		}
+
+		&-img {
+			// width: 100%;
+			height: 100%;
+			border-radius: 1rem;
+		}
+
+		&-card {
+			width: 35rem;
+			position: absolute;
+			left: 1.4rem;
+			bottom: 1.4rem;
+			@include respond("tab") {
+				display: none;
+			}
+		}
+		@include respond("tab") {
+			width: 100vw;
+			align-items: center;
+		}
+	}
+
+	&-btn {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 1rem;
+		margin: 6rem 0 3rem 0;
+		@include respond("phone") {
+			flex-direction: column;
+		}
+	}
+
+	@include respond("tab-landscape") {
+		grid-template-columns: 100%;
+
+		height: 80rem;
+		overflow: hidden;
+	}
+	@include respond("tab") {
+		justify-items: left;
+	}
+	@include respond("phone") {
+		height: 102rem;
+	}
+}
+
+.btn-span {
+	@include flex-center;
+	height: 1.8rem;
+	width: 14rem;
+	position: relative;
+}
+.btn-icon {
+	width: 2.8rem;
+	position: absolute;
+	left: 0;
+	@include respond("phone") {
+	}
+}
+.btn-text {
+	line-height: 0;
+	position: absolute;
+	right: 0;
+	@include respond("phone") {
+	}
+}
+
+.star-box {
+	margin-top: 1rem;
+}
+
+.star-icon {
+	width: 2rem;
+	&:not(:last-child) {
+		margin-right: 0.5rem;
+	}
+}
