@@ -1,5 +1,5 @@
 .footer {
-	width: 100vw;
+	// width: 100%;
 	height: max-content;
 	padding: 0rem 12rem 4rem 12rem;
 	display: flex;
@@ -13,7 +13,9 @@
 
 	&__container {
 		display: flex;
-		width: 85vw;
+		// width: 85vw;
+		// width: 80rem;
+		// height: min-content;
 		justify-content: space-between;
 		border-bottom: 1px solid rgb(217, 216, 216);
 		padding-bottom: 4rem;
@@ -50,20 +52,20 @@
 	&__lists {
 		display: flex;
 		justify-content: space-between;
-		flex-basis: 55vw;
+		gap: 5rem;
+		flex-basis: max-content;
+		// flex-basis: ;
 		overflow: hidden;
 
-		@include respond("phone") {
+		@include respond("tab-landscape") {
 			flex-wrap: wrap;
 			row-gap: 3rem;
 		}
-
 		@include respond("tab") {
 			flex-basis: 100%;
-			flex-wrap: wrap;
+			// flex-wrap: wrap;
 		}
-		@include respond("tab-landscape") {
-			flex-wrap: wrap;
+		@include respond("phone") {
 			row-gap: 3rem;
 		}
 	}
@@ -79,9 +81,9 @@
 		list-style: none;
 
 		&-container {
-			@include respond(phone) {
-				min-width: 40vw;
-			}
+			// @include respond(phone) {
+			// 	min-width: 30rem;
+			// }
 		}
 	}
 	&__list-item {
@@ -93,7 +95,8 @@
 		}
 	}
 	&__copyright {
-		width: 80vw;
+		// width: 80vw;
+		min-width: 100%;
 		margin-top: 5rem;
 		display: flex;
 		justify-content: space-between;
@@ -106,16 +109,26 @@
 
 		&-tc {
 			display: flex;
+			justify-content: space-between;
 			gap: 1.5rem;
+			font-size: 1.5rem;
+
 			&-line {
 				background-color: rgb(200, 200, 200);
 				height: 2rem;
 				width: 0.1rem;
 			}
 			&-link {
-				font-size: 1.7rem;
+				font-size: inherit;
 				text-decoration: none;
 				color: #1a75ff;
+				width: max-content;
+			}
+			@include respond("tab") {
+				max-width: 25rem;
+			}
+			@include respond("phone") {
+				max-width: 15rem;
 			}
 		}
 	}

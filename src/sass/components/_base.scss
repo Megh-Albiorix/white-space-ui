@@ -84,6 +84,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	// min-width: 100vw;
 }
 
 .section-highlight {
@@ -121,8 +122,7 @@ body {
 .social {
 	display: flex;
 	gap: 1.7rem;
-	&__link {
-	}
+
 	&__icon {
 		width: 2.5rem;
 	}

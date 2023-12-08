@@ -1,8 +1,8 @@
 .hero {
 	display: grid;
 	grid-template-rows: auto;
-	grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
-	width: 100vw;
+	grid-template-columns: repeat(auto-fit, minmax(55rem, 1fr));
+	min-width: 100%;
 	justify-items: center;
 	border-bottom: 1px solid rgb(186, 185, 185);
 	margin: 6rem 0;
@@ -10,19 +10,22 @@
 	align-items: center;
 
 	&-left {
-		width: 40vw;
+		// width: 40vw;
+		padding: 0 8rem;
 		margin-left: 6rem;
 
 		@include respond("tab-landscape") {
-			width: 90vw;
+			// width: 90vw;
 			margin-left: 5rem;
 		}
 		@include respond("tab") {
-			width: 88vw;
+			// width: 88vw;
 			margin-left: 3rem;
+			padding: 0 3rem;
 		}
 		@include respond("phone") {
-			width: 90vw;
+			// width: 90vw;
+			padding: 0;
 		}
 	}
 
@@ -36,7 +39,7 @@
 		font-size: 5rem;
 		margin-bottom: 1.5rem;
 		@include respond("phone") {
-			width: 87vw;
+			// width: 87vw;
 		}
 	}
 
@@ -52,7 +55,7 @@
 		&-img-box {
 			height: 75rem;
 			position: relative;
-			flex-basis: 95vw;
+			// flex-basis: 95vw;
 
 			@include respond("tab-landscape") {
 				height: 65rem;
@@ -102,7 +105,7 @@
 	}
 
 	@include respond("tab-landscape") {
-		grid-template-columns: 100vw;
+		grid-template-columns: 100%;
 
 		height: 80rem;
 		overflow: hidden;

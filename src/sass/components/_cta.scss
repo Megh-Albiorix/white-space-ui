@@ -1,5 +1,5 @@
 .cta {
-	width: 90vw;
+	// width: 90vw;
 	display: flex;
 	margin: 16rem 0 0 0;
 	border-bottom: 1px solid rgb(186, 185, 185);
@@ -7,7 +7,7 @@
 	@include flex-center-col;
 
 	&-header {
-		margin: 2rem 0;
+		margin: 4rem 0;
 		@include flex-center-col;
 		gap: 1rem;
 	}
@@ -57,7 +57,7 @@
 
 		@include respond("phone") {
 			flex-direction: column;
-			width: 100%;
+			// width: 100%;
 		}
 	}
 
@@ -71,6 +71,6 @@
 	@include respond("tab-landscape") {
 		margin-top: 8rem;
 		text-align: center;
-		width: 85%;
+		padding: inherit 5rem;
 	}
 }

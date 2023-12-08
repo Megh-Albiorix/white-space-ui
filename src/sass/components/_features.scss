@@ -1,12 +1,14 @@
 .features {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(45rem, 49%));
+	grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
 	column-gap: 2rem;
 	row-gap: 2rem;
 	justify-content: center;
 	justify-items: center;
 	align-items: center;
-	width: 90vw;
+	// width: 90vw;
+	max-width: 100%;
+	padding: 0 5rem;
 
 	&-header {
 		grid-column: 1/-1;
@@ -16,8 +18,8 @@
 		text-align: center;
 
 		@include respond("tab-landscape") {
-			width: 80vw;
-			margin: 3rem 0 0rem 0;
+			// width: 80vw;
+			margin: 3rem 3rem 0rem 3rem;
 		}
 
 		@include respond("phone") {
@@ -86,7 +88,10 @@
 			height: 100%;
 		}
 		@include respond("tab-landscape") {
-			margin-top: 7rem;
+			margin-top: 3rem;
+		}
+		@include respond("tab") {
+			margin-top: 2rem;
 		}
 	}
 
@@ -97,6 +102,6 @@
 		padding-bottom: 10rem;
 	}
 	@include respond("phone") {
-		width: 90vw;
+		// width: 90vw;
 	}
 }

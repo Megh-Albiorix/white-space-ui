@@ -1,19 +1,20 @@
 .clients {
 	// width: 70%;
-	width: 70vw;
+	// width: 70vw;
+	width: 100%;
 	height: max-content;
-	padding: 15rem 0 15rem 0;
+	padding: 15rem 10rem 15rem 10rem;
 	text-align: center;
 	&__logos {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(1rem, 15rem));
+		grid-template-columns: repeat(auto-fill, minmax(10rem, 20rem));
 		gap: 15rem;
 		row-gap: 3rem;
 		justify-content: center;
 		align-items: center;
 		@include respond("tab") {
-			row-gap: 10rem;
-			column-gap: 20rem;
+			row-gap: 7rem;
+			column-gap: 15rem;
 		}
 		@include respond("phone") {
 			row-gap: 8rem;
@@ -26,13 +27,16 @@
 		letter-spacing: 0.09rem;
 		margin-bottom: 5.5rem;
 		margin-inline-start: 3rem;
-
-		@include respond("phone") {
+		@include respond("tab") {
+			margin-inline-start: 0;
 		}
 	}
 
 	&__img {
 		width: 20rem;
+		@include respond("tab") {
+			width: 17rem;
+		}
 	}
 
 	@include respond("tab") {
